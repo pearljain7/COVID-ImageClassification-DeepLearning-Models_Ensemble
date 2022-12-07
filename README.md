@@ -35,7 +35,9 @@ On Kaggle/Google Colab:
 ## Workflow to train and test the model:
 * Train the chosen the chosen model on the given dataset to classify as 'Positive' and 'Negative'. (Note: You need not run grid search again)
 * Run the  validation and testing cells and analyse your results.
-* Confusion matrix, validation and testing accuracy and loss graphs are plotted for more analysis purpose.
+* The validation and training accuracy plot describes how the model performance changes with an increase in epochs.
+* The validation and training loss plot describes how the model loss changes with an increase in epochs.
+* The confusion matrix and AUC curves help describe the precision and recall on the test dataset.
 
 ## Testing the model:
-* Choose a given image from the dataset and feed into the prediction variable for each model to find the classification of the particular image.
+* Choose a given image from the dataset and feed into the input layer of the model to find the classification of the particular image.

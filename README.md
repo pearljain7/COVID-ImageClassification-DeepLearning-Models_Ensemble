@@ -20,7 +20,8 @@ On Kaggle/Google Colab:
  - Upload the dataset given.
  - Once the dataset is uploaded, you will see your input files in the following directory: ../input/covidx-cxr2/
  - The directory will contain data in the same format as the drive link.
- - Upload the chosen notebook for either of the five models or the Ensemble model.
+ - Upload the chosen notebook for either of the five models.
+ - For the ensemble models, also upload the given .txt files (which are prediction arrays from models) to the ../predarrays folder. Run the notebook titled covid-x-ray-ensemble-and-examples.ipynb.
 
 ## Find best params using Grid Search:
 

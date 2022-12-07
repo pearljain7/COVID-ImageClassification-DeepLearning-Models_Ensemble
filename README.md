@@ -8,25 +8,28 @@ Structure of Dataset:
 - Covidx-data
  - test (images for testing)
  - train (images for training)
- - test.txt
- - train.txt 
+ - test.txt (annotations and labels for the training data)
+ - train.txt (annotations and labels for the testing data)
 
 
 Clone this repository:
 git clone "https://github.com/pearljain7/COVID-Detection-with-Ensemble.git"
-Use ``Kaggle`` to run the python notebooks on the given dataset.
-On Kaggle:
+Use ``Kaggle`` or ``Google Colab`` to run the python notebooks on the given dataset.
+On Kaggle/Google Colab:
  - Create a new project.
  - Upload the dataset given.
  - Once the dataset is uploaded, you will see your input files in the following directory: ../input/covidx-cxr2/
  - The directory will contain data in the same format as the drive link.
  - Upload the chosen notebook for either of the five models or the Ensemble model.
 
-## Find best Params using Grid Search:
+## Find best params using Grid Search:
 
-* Run the chosen model for grid search to gauge the optimal learning rate and Optimiser.
+* Run the chosen model from grid search to gauge the optimal learning rate and Optimiser.
+* The grid search runs 10 epochs and iterates over each combination of parameters in the grid. 
+* If we test 4 learning rates with 3 optimizers, we end up with a total of 12 combinations. 
+* The entire process might run for 2-4 hours depending on the model that is running.
 * Check the output from the heatmap. Choose the optimizer and learning rate with the best performance.
-* Analyse the value and find the values for the learning rate (Eg: 0.01) and Optmiser (Eg: SGM).
+* Analyse the value and find the values for the learning rate (Eg: 0.01) and Optimizer (Eg: SGM).
 * Feed this value back into your model to train the model on these values.
 
 ## Workflow to train and test the model:
